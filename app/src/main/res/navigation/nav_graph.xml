@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+>
+    <fragment
+        android:id="@+id/inici"
+        android:name="com.example.competicioesportivaappiagomachado.ui.IniciFragment"
+        android:label="Inici"
+        tools:layout="@layout/fragment_inici">
+
+        <action
+            android:id="@+id/action_IniciFragment_to_CategoriesFragment"
+            app:destination="@id/CategoriesFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/CategoriesFragment"
+        android:name="com.example.competicioesportivaappiagomachado.ui.CategoriesFragment"
+        android:label="Categories"
+        tools:layout="@layout/fragment_categories">
+    </fragment>
+</navigation>
